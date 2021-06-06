@@ -336,6 +336,10 @@ btnLoan.addEventListener('click', function (e) {
 
       //UPDATE UI
       updateUI(currentAccount);
+
+      //RESET TIMER
+      clearInterval(timer);
+      timer = startLogOutTimer();
     }, 2500);
   }
 
